@@ -1,1 +1,27 @@
-/*# sourceMappingURL=style.css.map */
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(#314CB5, #203174);
+  padding: 0.75rem 1.875rem;
+}
+header nav .nav-links {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+header nav .nav-links a {
+  text-decoration: none;
+  color: white;
+}
+header nav .nav-links a:hover {
+  color: rgb(162, 197, 238);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", "sans-serif";
+}/*# sourceMappingURL=style.css.map */

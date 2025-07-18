@@ -2,5 +2,22 @@ header{
     nav{
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        background: linear-gradient(#314CB5, #203174);
+        padding: pxArem(12) pxArem(30);
+        .nav-links{
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            gap: pxArem(24);
+            
+            a{
+                text-decoration: none;
+                color: white;
+                &:hover{
+                    color: rgb(162, 197, 238);
+                }
+            }
+        }
     }
 }
