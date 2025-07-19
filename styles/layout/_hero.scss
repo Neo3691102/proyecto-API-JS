@@ -1,10 +1,46 @@
 .hero{
+    background-color: yellow;
     &__container{
-        background-color: gray;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        background-image: url('/assets/img/series.jpg');
+        background-size: cover;
         width: 100%;
+        height: pxArem(550);
         padding: pxArem(20);
-        img{
-            width: pxArem(600);
+        h1{
+            color: white;
+            font-size: pxArem(72);
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            top: pxArem(50);
         }
+        .searchbar{
+            height: pxArem(350);
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            gap: pxArem(12);
+            input{
+                width: pxArem(500);
+                height: pxArem(30);
+                border-radius: pxArem(9);    
+                padding: pxArem(27);
+                font-size: pxArem(20);
+            }
+            button{
+                background-color: purple;
+                color: white;
+                border-radius: 30%;
+                cursor: pointer;
+                width: pxArem(55);
+                height: pxArem(55);
+            }
+        }
+        
     }
 }
