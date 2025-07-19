@@ -1,0 +1,10 @@
+.hero{
+    &__container{
+        background-color: gray;
+        width: 100%;
+        padding: pxArem(20);
+        img{
+            width: pxArem(600);
+        }
+    }
+}
