@@ -1,7 +1,58 @@
 .footer__container{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background: linear-gradient(#314CB5, #203174);
+    padding: pxArem(18);
+
+    div:first-child{
+        color: white;
+        padding: pxArem(12);
+    }
+    form{
+        color: white;
+        padding: pxArem(12);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: pxArem(12);
+        label{
+            font-size: pxArem(24);
+        }
+        input{
+            width: 100%;
+            height: pxArem(36);
+            padding: pxArem(6);
+            border-radius: pxArem(9);
+            border:none;
+            &:focus{
+                outline: none;
+                border: 2px solid #fff;
+            }
+        }
+        button{
+            width: 100%;
+            height: pxArem(36);
+            background-color: #fff;
+            color: #203174;
+            border: none;
+            border-radius: pxArem(9);
+            cursor: pointer;
+            font-size: pxArem(18);
+            &:hover{
+                background-color: #ccc;
+            }
+        }
+        p{
+            font-size: pxArem(14);
+            text-align: center;
+        }
+    }
+    p:last-child{
+        color: white;
+        padding: pxArem(12);
+    }
 }
