@@ -9,9 +9,8 @@ const searchMoviesOrSeries = async () => {
     }
     if(query){
         try{
-            const response = axios.get(`https://api.tvmaze.com/search/shows?q=${query}`);
-            const data = await response.data;
-            console.log(data);
+            const response = await axios.get(`https://api.tvmaze.com/search/shows?q=${query}`);
+            console.log(response.data);
         }catch(error){
             console.error("No se encontró ninguna serie o película con ese nombre.", error);
         }
