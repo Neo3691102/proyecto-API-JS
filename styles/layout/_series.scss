@@ -1,0 +1,28 @@
+.series{
+    width: 100%;
+    height: pxArem(500);
+    padding: pxArem(48);
+    color: white;
+    h1{
+        font-size: pxArem(33);
+        padding: pxArem(30) 0;
+    }
+    &__container{
+        display: grid;
+        grid-template-columns: repeat(4,  1fr);
+        background-color: gray;
+        width: 100%;
+        column-gap: pxArem(15);
+        .seriecard{
+            display: flex;
+            flex-flow: column wrap ;
+            justify-content: center;
+            align-items: center;
+            border-radius: pxArem(9);
+            width: 90%;
+            margin: 0 auto;
+            height: pxArem(300);
+            background-color: orange;
+        }
+    }
+}
