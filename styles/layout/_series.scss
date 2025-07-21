@@ -1,6 +1,5 @@
 .series{
     width: 100%;
-    height: pxArem(500);
     padding: pxArem(48);
     color: white;
     h1{
@@ -9,10 +8,10 @@
     }
     &__container{
         display: grid;
-        grid-template-columns: repeat(4,  1fr);
-        background-color: gray;
+        grid-template-columns: repeat(5,  1fr);
         width: 100%;
         column-gap: pxArem(15);
+        row-gap: pxArem(33);
         .seriecard{
             display: flex;
             flex-flow: column wrap ;
@@ -22,7 +21,40 @@
             width: 90%;
             margin: 0 auto;
             height: pxArem(300);
-            background-color: orange;
+            background-color: rgb(69, 105, 206);
+            position: relative;
+            img{
+                width: 100%;;
+                height: pxArem(200);
+                border-top-left-radius: pxArem(9);
+                border-top-right-radius: pxArem(9);;
+                position: absolute;
+                top: 0;
+            }
+            h3{
+                padding: pxArem(12);
+                position: absolute;
+                bottom: pxArem(60);;
+            }
+            a{
+                position: absolute;
+                bottom: pxArem(24);
+                text-decoration: none;
+                width: pxArem(100);
+                height: pxArem(30);
+                background-color: white;
+                display: flex; 
+                justify-content: center;
+                align-items: center;
+                border-radius: pxArem(6);
+                color: black;
+                font-weight: bold;
+                &:hover{
+                    background: linear-gradient(skyblue, #203174);
+                    color: white;
+                    transition: 0.3s;
+                }
+            }
         }
     }
 }
