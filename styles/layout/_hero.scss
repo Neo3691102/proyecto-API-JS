@@ -1,5 +1,6 @@
 .hero{
-    background-color: yellow;
+    position: relative;
+    top: pxArem(87);
     &__container{
         display: grid;
         grid-template-columns: 1fr;
