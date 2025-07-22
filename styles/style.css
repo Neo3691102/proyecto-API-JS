@@ -1,3 +1,8 @@
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
 header nav {
   display: flex;
   justify-content: space-between;
@@ -20,7 +25,8 @@ header nav .nav-links a:hover {
 }
 
 .hero {
-  background-color: yellow;
+  position: relative;
+  top: 5.4375rem;
 }
 .hero__container {
   display: grid;
@@ -65,10 +71,48 @@ header nav .nav-links a:hover {
   height: 3.4375rem;
 }
 
+.busqueda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.busqueda__container {
+  width: 90%;
+  height: 31.25rem;
+  padding: 1.3125rem;
+  background-color: gray;
+  border-radius: 0.75rem;
+  position: absolute;
+  top: 6.25rem;
+  z-index: 11;
+}
+.busqueda__container svg {
+  position: absolute;
+  right: 1.125rem;
+  width: 2.0625rem;
+  height: 2.0625rem;
+}
+.busqueda__container svg:hover {
+  cursor: pointer;
+  fill: red;
+}
+.busqueda__container h1 {
+  color: white;
+  font-size: 2.0625rem;
+}
+.busqueda__results {
+  width: 100%;
+  height: 90%;
+  background-color: orange;
+  overflow-y: scroll;
+}
+
 .series {
   width: 100%;
   padding: 3rem;
   color: white;
+  position: relative;
+  top: 5.4375rem;
 }
 .series h1 {
   font-size: 2.0625rem;
@@ -132,7 +176,7 @@ header nav .nav-links a:hover {
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   align-items: center;
-  padding: 1.125rem;
+  padding: 5.625rem;
 }
 .footer__container div:first-child {
   color: white;

@@ -1,10 +1,14 @@
 header{
+    position: fixed;
+        width: 100%;
+        z-index: 10;
     nav{
         display: flex;
         justify-content: space-between;
         align-items: center;
         background: linear-gradient(#314CB5, #203174);
         padding: pxArem(12) pxArem(30);
+        
         .nav-links{
             list-style: none;
             display: flex;
