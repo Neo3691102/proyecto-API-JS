@@ -1,4 +1,5 @@
 .busqueda{
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,5 +34,12 @@
         height: 90%;
         background-color: orange;
         overflow-y: scroll;
+        padding: pxArem(15);
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
     }
+}
+
+.hidden{
+    display: none;
 }

@@ -105,6 +105,13 @@ header nav .nav-links a:hover {
   height: 90%;
   background-color: orange;
   overflow-y: scroll;
+  padding: 0.9375rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.hidden {
+  display: none;
 }
 
 .series {
