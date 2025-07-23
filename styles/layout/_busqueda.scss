@@ -1,14 +1,12 @@
 .busqueda{
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   
     
     &__container{
         width: 90%;
         height: pxArem(500);
         padding: pxArem(21);
-        background-color: gray;
+        background-color: #243680;
         border-radius: pxArem(12);
         position: absolute;;
         top: pxArem(100);
@@ -27,16 +25,65 @@
         h1{
             color: white;
             font-size: pxArem(33);
+            padding: pxArem(12) 0;
         }
     }
     &__results{
         width: 100%;
         height: 90%;
-        background-color: orange;
+       
         overflow-y: scroll;
         padding: pxArem(15);
         display: grid;
         grid-template-columns: repeat(5, 1fr);
+        column-gap: pxArem(33);
+        row-gap: pxArem(33);
+        .seriecard{
+            display: flex;
+            flex-flow: column wrap ;
+            justify-content: center;
+            align-items: center;
+            border-radius: pxArem(9);
+            width: 90%;
+            margin: 0 auto;
+            height: pxArem(300);
+            background-color: rgb(69, 105, 206);
+            position: relative;
+            img{
+                width: 100%;;
+                height: pxArem(200);
+                border-top-left-radius: pxArem(9);
+                border-top-right-radius: pxArem(9);;
+                position: absolute;
+                top: 0;
+                
+            }
+            h3{
+                padding: pxArem(12);
+                position: absolute;
+                bottom: pxArem(60);
+                color: white;
+            }
+            a{
+                position: absolute;
+                bottom: pxArem(24);
+                text-decoration: none;
+                width: pxArem(100);
+                height: pxArem(30);
+                background-color: white;
+                display: flex; 
+                justify-content: center;
+                align-items: center;
+                border-radius: pxArem(6);
+                color: black;
+                font-weight: bold;
+                &:hover{
+                    background: linear-gradient(skyblue, #203174);
+                    color: white;
+                    transition: 0.3s;
+                }
+            }
+        }
     }
 }
 

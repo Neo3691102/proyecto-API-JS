@@ -10,7 +10,8 @@ const searchMoviesOrSeries = async () => {
     alert("Por favor, ingresa un término de búsqueda.");
     return;
   }
-  seccionBusqueda.style.display = "block"; //mostrar el contenedor de búsqueda
+  seccionBusqueda.style.display = "flex"; //mostrar el contenedor de búsqueda
+  seccionBusqueda.style.justifyContent = "center";
   if (query) {
     try {
       const response = await axios.get(
