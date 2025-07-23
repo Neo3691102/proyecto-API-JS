@@ -55,4 +55,10 @@
         color: white;
         padding: pxArem(12);
     }
+    @media (max-width: pxArem(480)){
+        padding: pxArem(30);
+        grid-template-columns: 1fr;
+        position: relative;
+        top: pxArem(50);
+    }
 }

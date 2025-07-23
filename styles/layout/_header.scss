@@ -8,6 +8,14 @@ header{
         align-items: center;
         background: linear-gradient(#314CB5, #203174);
         padding: pxArem(12) pxArem(30);
+
+        a{
+            img{
+                @media (max-width: pxArem(480)){
+                    width: pxArem(100);
+                }
+            }
+        }
         
         .nav-links{
             list-style: none;
@@ -23,8 +31,13 @@ header{
                 }
             }
             @media (max-width: pxArem(480)){
-                font-size: pxArem(20);
+                font-size: pxArem(15);
+                gap: pxArem(30);
             }
+        }
+        @media (max-width: pxArem(480)){
+            flex-direction: column;
+            gap: pxArem(12);
         }
     }
 }

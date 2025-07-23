@@ -7,6 +7,9 @@
     h1{
         font-size: pxArem(33);
         padding: pxArem(30) 0;
+        @media (max-width: pxArem(480)){
+            text-align: center;
+        }
     }
     &__container{
         display: grid;
@@ -37,7 +40,10 @@
             h3{
                 padding: pxArem(12);
                 position: absolute;
-                bottom: pxArem(60);;
+                bottom: pxArem(60);
+                @media (max-width: pxArem(480)){
+                    text-align: center;
+                }
             }
             a{
                 position: absolute;
@@ -58,6 +64,19 @@
                     transition: 0.3s;
                 }
             }
+
+            @media (max-width: pxArem(480)){
+                width: 100%;
+                height: pxArem(330);
+            }
+        }
+
+        @media (max-width: pxArem(480)){
+            grid-template-columns: repeat(2, 1fr);
+
         }
     }
+    @media (max-width: pxArem(480)){
+        padding: pxArem(6);
+    } 
 }
