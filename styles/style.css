@@ -23,6 +23,11 @@ header nav .nav-links a {
 header nav .nav-links a:hover {
   color: rgb(162, 197, 238);
 }
+@media (max-width: 30rem) {
+  header nav .nav-links {
+    font-size: 1.25rem;
+  }
+}
 
 .hero {
   position: relative;
