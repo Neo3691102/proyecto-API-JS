@@ -19,6 +19,9 @@
             text-align: center;
             position: relative;
             top: pxArem(50);
+            @media (max-width: pxArem(480)){
+                font-size: pxArem(42);
+            }
         }
         .searchbar{
             height: pxArem(350);
@@ -32,6 +35,10 @@
                 border-radius: pxArem(9);    
                 padding: pxArem(27);
                 font-size: pxArem(20);
+                @media (max-width: pxArem(480)){
+                    width: pxArem(200);
+                    font-size: pxArem(16);
+                }
             }
             button{
                 background-color: purple;
@@ -41,7 +48,10 @@
                 width: pxArem(55);
                 height: pxArem(55);
             }
+
+           
         }
+        
         
     }
 }
